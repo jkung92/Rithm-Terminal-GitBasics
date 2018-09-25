@@ -1,0 +1,88 @@
+{ Rithm School Terminal and UNIX. }
+
+{ Terminal Basics Exercises. }
+
+Part I
+1. cd /Users/$USER/Desktop
+   mkdir first
+2. cd first
+3. touch person.txt
+4. mv person.txt another.txt
+5. cp another.txt copy.txt
+6. rm copy.txt
+7. cp -r first second
+8. rm -rf second
+
+Part II
+1. The man command displays the manual page for a command. 
+  D or arrow down for down, U or arrow up for Up, Q to quit (Windows).
+2. For ls -l , it lists in a long listing format while -a lists all files and folders.
+3. curl https://www.google.com > google.html
+4. less google.html
+5. less -p hplogo google.html
+6. Option/Alt + Left or Right
+7. Control + E
+8. Control + A
+9. Option + Delete
+10. Terminal is a program that is an interface to the shell. The shell handles commands.
+11. An absolute path begins with the root directory and gives the full location for a file/folder.
+12. A relative path is a path starting at the current location or directory.
+13. A flag gives you additional functionality to an existing command. 
+  For instance, with rm you can use -rf, and with ls you can use -a or -l.
+14. r will recursively remove folders and -f will force removal.
+
+
+{ Permissions, Redirection, and Piping Exercise. }
+
+Part I (Permissions and links)
+1. touch restricted.txt
+2. chmod 600 restricted.txt
+3. chmod ugo+rwx restricted.txt or chmod a+rwx restricted.txt
+4. mkdir secret_files
+   cd secret_files
+   touch first_secret.txt
+   mkdir classified
+   cd classified
+   touch super_secret.txt
+5. chmod -R 770 secret_files
+6. ln restricted.txt hard_link
+7. ln -s secret_files/classified classified_link
+
+Part II (Piping and Redirection)
+1. sort vegetables.txt
+2. wc -l vegetables.txt
+3. cat vegetables.txt | sort | uniq > vegatables_sorted.txt
+4. cat vegetables.txt | tail -n 3 > last_three.txt
+5. cat vegetables.txt | grep "Broccoli" | wc -l
+
+
+{ Intermediate Terminal Exercises. }
+
+Part I
+1. export FIRST_NAME=Jonathan
+2. echo $FIRST_NAME
+3. echo $PATH
+4. $PATH is an environment variable the terminal uses to find programs to execute.
+5. You can use these environment variables as shortcuts to folders/paths.
+6. To save an env variable, open the config file for your shell (.bash_profile or .zshrc)
+   , and add the line export ENV_VAR_NAME=/(Path)
+7. A process is a program that is being run on your computer.
+8. ps aux
+9. The PID is a number that uniquely identifies the process.
+10. You can use kill (PID) to terminate a process.
+11. kill -9 will terminate a process that may be frozen/crashed.
+12. -i
+13. -B
+14. -C
+15. -A
+16. -w
+17. -n
+
+Part II
+1. find ~/Desktop -name "learn"
+2. find ~/Desktop -name "P.*"
+3. find ~/Desktop -name "*.txt"
+4. find ~/Desktop/views -name "*data*"
+5. grep -c "Elie" instructors.txt
+6. grep -w "P.*: instructors.txt
+7. grep -ni "z.*" instructors.txt

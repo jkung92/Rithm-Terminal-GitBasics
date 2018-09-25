@@ -1,0 +1,50 @@
+{ Rithm School Git and GitHub. }
+
+{ Git Basics Exercises. }
+1. mkdir learn_git_again
+2. cd learn_git_again
+3. touch third.txt
+4. git init
+5. git add third.txt
+6. git commit -m "adding third.txt"
+7. git log
+8. touch fourth.txt
+9. git add fourth.txt
+10. git commit -m "adding fourth.txt"
+11. rm third.txt
+12. git add third.txt
+13. git commit -m "removing third.txt"
+14. git log
+15. git config --global core.pager "cat"
+16. git config --global --list
+
+
+{ Branching and Merging Exercises. }
+Part I
+1. git clean can remove untracked/unmerged files from the working directory.
+2. The -d flag for git clean removes untracked directories in addition to untracked files.
+   The -f flag stands for force and is required if clean.requireForce is not set to false.
+3. git checkout -b NAME_OF_BRANCH
+4. Fast forward merge is when git can tell when commits happen in order. A recursive merge
+   happens when different commits happen at different times on two branches and git can't
+   determine what order these commits happened in.
+5. git checkout
+6. git checkout
+7. git branch -D NAME_OF_BRANCH
+8. git diff lets you see changes in the working tree not yet staged for the next commit.
+9. git rm --cached
+10. Merge conflicts occur when commit changes are done on the same file on two different branches.
+
+Part II
+(create merge conflict - followed steps on Merge Conflicts page)
+
+{ GitHub Exercises. }
+Part I
+1. https://github.com/jkung92/Practice
+2. https://github.com/jkung92/Practice
+3. https://github.com/jkung92/git_practice
+4. https://github.com/jkung92/git_practice/tree/Test_Branch_2
+5. https://github.com/rithmschool/git_practice/pull/98
+
+Part II
+(clmystery)
